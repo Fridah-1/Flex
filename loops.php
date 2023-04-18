@@ -11,7 +11,7 @@
 
 //syntax
 
-/*for($counterVariable;$test_expression; $update_variable){
+/*for($initialize;$test_expression; $update_variable){
 //do sth
 }*/
 
@@ -37,4 +37,37 @@ for($x=50; $x>=0; $x-=5)
 }
 echo "<hr>";
 
+for($i=1;$i<=15;$i++)
+{
+ echo $i .". Fridah Maina";
+ echo"<br>";
+}
+
+//while loop
+//syntax
+/*while ($condition)
+{
+ //do sth while condition is true
+ //update counter
+}*/
+
+//write a program that displays numbers 5 15 25 35 45 using while loop
+
+echo"<hr>";
+$i=5;
+while($i<=45)
+{
+ echo $i. " ";
+ $i+=10;
+}
+
+//using a while loop print 8 6 4 2 0
+echo"<hr>";
+
+$z=8;
+while($z>=0)
+{
+    echo $z. " ";
+    $z-=2;
+}
 ?>
