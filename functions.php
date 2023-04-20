@@ -78,7 +78,54 @@ function displayArrayElement(){
     }
 }
 
-displayArrayElement()
+displayArrayElement();
 
+
+
+
+//Return evens
+function isEven($numbers){
+
+    $even= array();
+
+    foreach($numbers as $number){
+        if($number % 2 === 0){
+            $even[] .= $number;  
+        }
+    }
+    
+    return $even;
+}
+
+
+$numbers=array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+print_r(isEven($numbers));
+
+//Return Odds
+echo "<br>";
+echo "<br>";
+function isOdd($numbers){
+
+    $odd= array();
+
+    foreach($numbers as $number){
+        if($number % 2 !== 0){
+            $odd[] .= $number;  
+            echo $number. " ,";
+        }
+    }
+    
+    return $odd;
+}
+
+
+$numbers=array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+//print_r(isOdd($numbers));
+
+echo "<br>";
+isOdd($numbers);
+echo " are ODD😁.";
 
 ?>
